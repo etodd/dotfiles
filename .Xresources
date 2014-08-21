@@ -1,3 +1,8 @@
+! Bind Ctrl-Shift-C and Ctrl-Shift-V to copy/paste
+XTerm*vt100*translations:	#override \n\
+							Shift Ctrl <KeyPress>C: copy-selection(CLIPBOARD)	\n\
+							Shift Ctrl <KeyPress>V: insert-selection(CLIPBOARD)	\n\
+
 XTerm*faceName: Droid Sans Mono
 xterm*faceSize: 10
 xterm*vt100*geometry: 80x60

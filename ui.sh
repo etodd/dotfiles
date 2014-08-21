@@ -31,3 +31,6 @@ rm dropbox.deb
 sudo apt-get install filezilla
 
 sudo apt-get install gimp
+
+# Disable nautilus desktop
+gsettings set org.gnome.desktop.background show-desktop-icons false
