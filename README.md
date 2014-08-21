@@ -1,5 +1,7 @@
 # Evan's dotfiles
 
+[![Screenshot](http://i.imgur.com/brkmmJZl.png)](http://i.imgur.com/brkmmJZ.png)
+
 Based on [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles/blob/master/README.md)
 
 ## Scripts

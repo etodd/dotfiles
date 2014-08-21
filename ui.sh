@@ -12,7 +12,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
  
 #i3
-sudo apt-get install i3
+sudo apt-get install i3 scrot
  
 # Chrome
 sudo apt-get install -y libxss1
