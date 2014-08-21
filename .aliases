@@ -16,3 +16,5 @@ alias ls="command ls ${colorflag}"
 
 # Enable aliases to be sudo'ed
 alias sudo='sudo '
+
+alias lock='i3lock -c 183f57'
