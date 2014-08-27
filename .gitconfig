@@ -9,3 +9,5 @@
 	tool = vimdiff
 [diff]
 	external = vimdiff
+[push]
+	default = simple
