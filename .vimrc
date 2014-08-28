@@ -19,7 +19,7 @@ set wildignore+=*.o,*.obj,.git,.svn,build,*.pyc,*.jpg,*.png,*.gif,*.d,Pods/Heade
  
 set nohidden
  
-filetype plugin indent on
+filetype indent off
 set autoindent                                                                                                                    
 set nowrap
 set noexpandtab
