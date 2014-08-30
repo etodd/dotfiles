@@ -4,33 +4,19 @@ set -u
 set -e
 set -o pipefail
 
-# Spotify repo
-sudo bash -c 'echo deb http://repository.spotify.com stable non-free >> /etc/apt/sources.list'
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
-
 sudo apt-get update
 sudo apt-get upgrade -y
  
 #i3
-sudo apt-get install i3 scrot
+sudo apt-get install xserver-xorg lightdm nautilus i3 scrot network-manager
  
 # Chrome
 sudo apt-get install -y libxss1
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome*.deb
+sudo dpkg -i google-chrome*.deb || true # This will fail if dependencies are not already met
+sudo apt-get install -f # Install Chrome dependencies
+sudo dpkg -i google-chrome*.deb # Now install the Chrome deb again
 rm google-chrome*.deb
  
-# Spotify
-sudo apt-get install -y spotify-client
- 
-# Dropbox
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb -O dropbox.deb
-sudo dpkg -i dropbox.deb
-rm dropbox.deb
-
-sudo apt-get install filezilla
-
-sudo apt-get install gimp
-
 # Disable nautilus desktop
 gsettings set org.gnome.desktop.background show-desktop-icons false
