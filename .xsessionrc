@@ -1,2 +1,3 @@
 xset r rate 150 30
 xsetroot -solid "#183f57"
+xrdb -merge ~/.Xresources
