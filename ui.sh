@@ -8,7 +8,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
  
 #i3
-sudo apt-get install xserver-xorg lightdm nautilus gnome-font-viewer i3 scrot network-manager
+sudo apt-get install xserver-xorg lightdm nautilus gnome-font-viewer eog i3 scrot network-manager
  
 # Chrome
 sudo apt-get install -y libxss1
