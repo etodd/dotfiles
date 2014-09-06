@@ -1,2 +1,2 @@
-xset r rate 150 30
+xset r rate 180 30
 xsetroot -solid "#183f57"
