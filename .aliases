@@ -19,6 +19,10 @@ alias sudo='sudo '
 
 alias lock='i3lock -c 183f57'
 
+alias secpass='openssl rand -base64 24'
+
+alias hexpass='openssl rand -hex 24'
+
 # keyboard backlight controller
 kblight()
 {
