@@ -18,3 +18,9 @@ alias ls="command ls ${colorflag}"
 alias sudo='sudo '
 
 alias lock='i3lock -c 183f57'
+
+# keyboard backlight controller
+kblight()
+{
+	sudo bash -c "echo $1 > /sys/class/leds/*kbd_backlight/brightness"
+}
