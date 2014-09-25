@@ -42,7 +42,7 @@ xterm*eightBitInput: false
 #define _colorIT       #80d4aa
 !TXT Normal, Normal, Cursor
 #define _foreground    #dcdccc
-#define _background    #183f57
+#define _background    #101a26
 #define _cursorColor   #8faf9f
 URxvt*color0         : _color0
 URxvt*color1         : _color1
