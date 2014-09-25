@@ -1,7 +1,9 @@
-set runtimepath^=~/.vim/bundle/ctrlp.vim
- 
 set t_Co=256
- 
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/vim-gitgutter
+let g:ctrlp_working_path_mode = 'a'
+
 set errorformat=
   \%f:%l:%c:{%*[^}]}:\ error:\ %m,
   \%f:%l:%c:{%*[^}]}:\ fatal\ error:\ %m,
@@ -32,7 +34,6 @@ set sidescrolloff=5
 set nocompatible
 set ttyfast
 set noerrorbells
-set autochdir
 set incsearch
 set ignorecase
 set showmatch
