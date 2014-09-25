@@ -2,7 +2,12 @@ set t_Co=256
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/vim-gitgutter
+set runtimepath^=~/.vim/bundle/lightline.vim
 let g:ctrlp_working_path_mode = 'a'
+let g:lightline = {
+	\ 'colorscheme': 'wombat',
+	\ }
+set laststatus=2
 
 set errorformat=
   \%f:%l:%c:{%*[^}]}:\ error:\ %m,
@@ -75,3 +80,5 @@ ia retunr   return
 ia reutrn   return
 ia sefl     self
 ia eslf     self
+
+set noshowmode
