@@ -53,6 +53,7 @@ set nobackup
 set noswapfile
 set title
 set noruler
+set shortmess+=I
  
 set cursorline
 set cursorcolumn
