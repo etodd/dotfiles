@@ -3,10 +3,10 @@
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
-git submodule update --init;
+git submodule update --init --recursive;
 
 function doIt() {
-	rsync --exclude ".git/" --exclude "*.sh" \
+	rsync --exclude ".git/" --exclude "/*.sh" \
 		--exclude "README.md" --exclude ".gitmodules" -avh --no-perms . ~;
 	source ~/.bash_profile;
 	xrdb -merge ~/.Xresources

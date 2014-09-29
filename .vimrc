@@ -3,6 +3,8 @@ set t_Co=256
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/vim-gitgutter
 set runtimepath^=~/.vim/bundle/lightline.vim
+set runtimepath^=~/.vim/bundle/YouCompleteMe
+set completeopt-=preview
 let g:ctrlp_working_path_mode = 'a'
 let g:lightline = {
 	\ 'colorscheme': 'wombat',
