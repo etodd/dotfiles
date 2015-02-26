@@ -25,6 +25,7 @@ set errorformat=
 set wildmenu
 set wildmode=full
 set wildignore+=*.o,*.obj,.git,.svn,build,*.pyc,*.jpg,*.png,*.gif,*.d,Pods/Headers,Pods/BuildHeaders
+let g:ycm_confirm_extra_conf = 0
  
 set nohidden
  
@@ -47,7 +48,6 @@ set showmatch
 set diffopt=filler,iwhite
 set background=dark
 set autoread
-set lazyredraw
 set history=1000
 syntax on
 set undolevels=1000
@@ -56,6 +56,7 @@ set noswapfile
 set title
 set noruler
 set shortmess+=I
+set ttimeoutlen=0
  
 set cursorline
 set cursorcolumn
