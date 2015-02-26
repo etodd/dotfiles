@@ -55,7 +55,7 @@ set nobackup
 set noswapfile
 set title
 set noruler
-set shortmess+=I
+set shortmess+=Ia
 set ttimeoutlen=0
  
 set cursorline
