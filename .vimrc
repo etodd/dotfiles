@@ -10,6 +10,8 @@ let g:lightline = {
 	\ 'colorscheme': 'wombat',
 	\ }
 set laststatus=2
+set secure
+set exrc
 
 set errorformat=
   \%f:%l:%c:{%*[^}]}:\ error:\ %m,

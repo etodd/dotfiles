@@ -12,6 +12,9 @@ for file in ~/.{exports,aliases}; do
 done;
 unset file;
 
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
