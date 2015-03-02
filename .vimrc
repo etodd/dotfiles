@@ -67,8 +67,11 @@ color ron
 hi ErrorMsg ctermfg=Red ctermbg=Black
 hi Error ctermfg=Red ctermbg=Black
 hi SpellBad ctermfg=Red ctermbg=Black
+hi SpellCap ctermfg=0 ctermbg=11
+hi Cursor ctermbg=white
 hi CursorLine ctermbg=black cterm=none
 hi CursorColumn ctermbg=black
+hi MatchParen ctermbg=black ctermfg=red
  
 set backspace=indent,eol,start
 set whichwrap=h,l,~,[,]
