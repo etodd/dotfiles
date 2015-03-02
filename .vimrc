@@ -64,7 +64,9 @@ set cursorline
 set cursorcolumn
  
 color ron
- 
+hi ErrorMsg ctermfg=Red ctermbg=Black
+hi Error ctermfg=Red ctermbg=Black
+hi SpellBad ctermfg=Red ctermbg=Black
 hi CursorLine ctermbg=black cterm=none
 hi CursorColumn ctermbg=black
  
