@@ -72,6 +72,10 @@ hi Cursor ctermbg=white
 hi CursorLine ctermbg=black cterm=none
 hi CursorColumn ctermbg=black
 hi MatchParen ctermbg=black ctermfg=red
+hi DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=black 
+hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black 
+hi DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black 
+hi DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black 
  
 set backspace=indent,eol,start
 set whichwrap=h,l,~,[,]
@@ -93,6 +97,18 @@ ia sefl     self
 ia eslf     self
 
 set noshowmode
+
+" Switch editing between .c* and .h* files (and more).
+function! Mosh_Flip_Ext()
+	" Since .h file can be in a different dir, call find.
+	if match(expand("%"),'\.c') > 0
+		let s:flipname = substitute(expand("%"),'\.c\(.*\)','.h\1',"")
+	elseif match(expand("%"),"\\.h") > 0
+		let s:flipname = substitute(expand("%"),'\.h\(.*\)','.c\1',"")
+	endif
+	exe ":sp " s:flipname
+endfun
+map <F4> :call Mosh_Flip_Ext()<CR>
 
 " Return to old position when reopening files
 if has("autocmd")
