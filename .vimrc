@@ -26,7 +26,7 @@ set errorformat=
  
 set wildmenu
 set wildmode=full
-set wildignore+=*.o,*.obj,.git,.svn,build,*.pyc,*.jpg,*.png,*.gif,*.d,Pods/Headers,Pods/BuildHeaders
+set wildignore+=*.o,*.obj,.git,.svn,build,*.pyc,*.jpg,*.png,*.gif,*.d,Pods/Headers,Pods/BuildHeaders,_site
 let g:ycm_confirm_extra_conf = 0
  
 set nohidden
