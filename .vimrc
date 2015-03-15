@@ -33,6 +33,12 @@ set nohidden
  
 filetype indent off
 set autoindent                                                                                                                    
+set copyindent
+set smartindent
+if v:version > 704 || v:version == 704 && has("patch338")
+	" Patch 7.4.338, after wrapping lines, indent the wrapping lines too! Thanks to Chris Brabandt for fix.
+	set breakindent
+endif
 set nowrap
 set noexpandtab
 set tabstop=4
@@ -41,7 +47,7 @@ set softtabstop=4
  
 set scrolloff=5
 set sidescrolloff=5
-set nocompatible
+if &compatible | set nocompatible | endif
 set ttyfast
 set noerrorbells
 set incsearch
@@ -59,6 +65,9 @@ set title
 set noruler
 set shortmess+=Ia
 set ttimeoutlen=0
+set magic
+set t_ti= t_te=
+set synmaxcol=900
  
 set cursorline
 set cursorcolumn
