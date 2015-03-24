@@ -68,7 +68,7 @@ mode "resize" {
 }
 
 # split in horizontal orientation
-bindsym $mod+n split h
+bindsym $mod+x split h
 
 # split in vertical orientation
 bindsym $mod+v split v
