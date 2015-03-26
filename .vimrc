@@ -85,6 +85,8 @@ hi DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=black
 hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black 
 hi DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black 
 hi DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black 
+hi Todo term=standout ctermfg=11 ctermbg=0
+hi YcmWarningSection term=standout ctermfg=11 ctermbg=0
  
 set backspace=indent,eol,start
 set whichwrap=h,l,~,[,]
@@ -111,9 +113,9 @@ set noshowmode
 function! Mosh_Flip_Ext()
 	" Since .h file can be in a different dir, call find.
 	if match(expand("%"),'\.c') > 0
-		let s:flipname = substitute(expand("%"),'\.c\(.*\)','.h\1',"")
+		let s:flipname = substitute(expand("%"),'\.c\(.*\)','.h',"")
 	elseif match(expand("%"),"\\.h") > 0
-		let s:flipname = substitute(expand("%"),'\.h\(.*\)','.c\1',"")
+		let s:flipname = substitute(expand("%"),'\.h\(.*\)','.cpp',"")
 	endif
 	exe ":sp " s:flipname
 endfun
