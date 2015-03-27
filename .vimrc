@@ -51,7 +51,7 @@ if &compatible | set nocompatible | endif
 set ttyfast
 set noerrorbells
 set incsearch
-set ignorecase
+set smartcase
 set showmatch
 set diffopt=filler,iwhite
 set background=dark
