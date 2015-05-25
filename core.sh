@@ -9,3 +9,6 @@ sudo apt-get upgrade -y
  
 # Development tools
 sudo apt-get install -y screen vim git ssh build-essential python-dev python-pip unzip curl cmake
+
+# Node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.2/install.sh | bash
