@@ -1,3 +1,5 @@
+shell /bin/bash
+
 startup_message off
 
 defscrollback 32000
