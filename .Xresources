@@ -10,6 +10,12 @@ xterm*termName: xterm-color
 xterm*allowSendEvents: True
 xterm*eightBitInput: false
 xterm*vt100.renderFont: false
+xterm*vt100.initialFont: 5
+xterm*scrollBar: false
+xterm*rightScrollBar: false
+xterm*toolBar: off
+Xft*antialias: true
+Xft*autohint: true
 
 !BLK Cursor
 #define _color0        #000000
