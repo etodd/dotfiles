@@ -28,3 +28,8 @@ kblight()
 {
 	sudo bash -c "echo $1 > /sys/class/leds/*kbd_backlight/brightness"
 }
+
+blight()
+{
+	sudo bash -c "echo $1 > /sys/class/backlight/*backlight/brightness"
+}
