@@ -84,6 +84,9 @@ bindsym $mod+e layout default
 # change focus between tiling / floating windows
 bindsym $mod+Shift+space focus mode_toggle
 
+# toggle current window floating
+bindsym $mod+t floating toggle
+
 # focus the parent container
 bindsym $mod+a focus parent
 
