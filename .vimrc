@@ -81,10 +81,10 @@ hi Cursor ctermbg=white
 hi CursorLine ctermbg=black cterm=none
 hi CursorColumn ctermbg=black
 hi MatchParen ctermbg=black ctermfg=red
-hi DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=black 
-hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black 
-hi DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black 
-hi DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black 
+hi DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white 
+hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=white 
+hi DiffText term=reverse cterm=bold ctermfg=15 ctermbg=4
+hi DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=white 
 hi Todo term=standout ctermfg=11 ctermbg=0
 hi YcmWarningSection term=standout ctermfg=11 ctermbg=0
  
