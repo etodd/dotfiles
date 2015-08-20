@@ -11,9 +11,6 @@
 
 set $mod Mod1
 
-# font for window titles. ISO 10646 = Unicode
-font xft:Droid Sans Mono 10
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -115,16 +112,12 @@ bindsym $mod+Shift+parenright move container to workspace 10
 # printscreen
 bindsym Print exec scrot
 
-# reload the configuration file
-bindsym $mod+Shift+C reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 
 bindsym $mod+Shift+X exec i3lock -c 101a26
 
-bindsym $mod+r mode "resize"
+bindsym $mod+Shift+R mode "resize"
 
 # volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 10%+
@@ -140,5 +133,3 @@ bar {
 }
 
 bindsym Shift+$mod+N move workspace to output right
-
-exec --no-startup-id nm-applet
