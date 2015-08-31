@@ -33,12 +33,6 @@ case "$*" in
 (*skype*) install_skype=1
 esac
 
-if [ $install_ycm -eq 1 ]; then
-	sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-	sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-	echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee --append /etc/apt/sources.list.d/mono-xamarin.list
-fi
-
 if [ $install_dropbox -eq 1 ]; then
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5044912E
 	sudo add-apt-repository "deb http://linux.dropbox.com/ubuntu precise main"
