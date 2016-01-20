@@ -24,7 +24,7 @@ Xft*autohint: true
 #define _color1        #e89393
 #define _color9        #e89393
 !GRN SpecialKey
-#define _color2        #9ece9e
+#define _color2        #14443a
 #define _color10       #9ece9e
 !YEL Keyword
 #define _color3        #f0dfaf
