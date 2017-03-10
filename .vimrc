@@ -13,7 +13,7 @@ set laststatus=2
 set secure
 set exrc
 set encoding=utf-8
-set fileencoding=utf-8
+setglobal fileencoding=utf-8
 
 set errorformat=
   \%f:%l:%c:{%*[^}]}:\ error:\ %m,
