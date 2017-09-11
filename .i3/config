@@ -122,6 +122,8 @@ bindsym $mod+Shift+R mode "resize"
 # volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 10%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 10%-
+bindsym $mod+Shift+W exec --no-startup-id amixer -q sset Master 10%+
+bindsym $mod+Shift+S exec --no-startup-id amixer -q sset Master 10%-
 
 bindsym $mod+Shift+P exec xrandr --output HDMI1 --off
 bindsym $mod+p exec xrandr --output HDMI1 --auto --right-of eDP1

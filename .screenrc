@@ -7,3 +7,5 @@ defscrollback 32000
 defutf8 on
 
 vbell off
+
+maptimeout 5
