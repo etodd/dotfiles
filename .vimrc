@@ -3,7 +3,6 @@ set t_Co=256
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/vim-gitgutter
 set runtimepath^=~/.vim/bundle/lightline.vim
-set runtimepath^=~/.vim/bundle/YouCompleteMe
 set completeopt-=preview
 let g:ctrlp_working_path_mode = 'a'
 let g:lightline = {
@@ -29,7 +28,6 @@ set errorformat=
 set wildmenu
 set wildmode=full
 set wildignore+=*.o,*.obj,.git,.svn,build,*.pyc,*.jpg,*.png,*.gif,*.d,Pods/Headers,Pods/BuildHeaders,_site
-let g:ycm_confirm_extra_conf = 0
  
 set nohidden
 set nohlsearch
