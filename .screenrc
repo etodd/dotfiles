@@ -9,3 +9,5 @@ defutf8 on
 vbell off
 
 maptimeout 5
+
+term screen-256color
