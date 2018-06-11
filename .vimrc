@@ -1,6 +1,9 @@
+set t_Co=256
+
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-set runtimepath^=~/.vim/bundle/vim-gitgutter
 set runtimepath^=~/.vim/bundle/lightline.vim
+set runtimepath^=~/.vim/bundle/vim-gitgutter
+set runtimepath^=~/.vim/bundle/vim-sleuth
 let g:ctrlp_working_path_mode = 'a'
 let g:lightline = {
 	\ 'colorscheme': 'wombat',
@@ -52,7 +55,6 @@ set pastetoggle=<F2>
 set backspace=indent,eol,start
 set whichwrap=h,l,~,[,]
  
-filetype indent off
 nnoremap j gj
 nnoremap k gk
 cmap w!! w !sudo tee % >/dev/null
@@ -63,6 +65,7 @@ if has("autocmd")
 endif
  
 color ron
+syntax on
 hi ErrorMsg ctermfg=Red ctermbg=Black
 hi Error ctermfg=Red ctermbg=Black
 hi SpellBad ctermfg=Red ctermbg=Black
@@ -76,4 +79,3 @@ hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=white
 hi DiffText term=reverse cterm=bold ctermfg=15 ctermbg=4
 hi DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=white 
 hi Todo term=standout ctermfg=11 ctermbg=0
-syntax on
