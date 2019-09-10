@@ -4,8 +4,6 @@ case $- in
       *) return;;
 esac
 
-set -o vi
-
 export CC=/usr/bin/clang
 export CXX=/usr/bin/clang++
 
