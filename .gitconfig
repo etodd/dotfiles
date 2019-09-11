@@ -3,11 +3,9 @@
 	email = evan@etodd.io
 [color]
 	ui = true
-[core]
-	editor = vim
 [merge]
 	tool = vimdiff
 [diff]
-	external = vimdiff
+	tool = vimdiff
 [push]
 	default = simple
