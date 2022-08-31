@@ -1,4 +1,4 @@
-shell /bin/bash
+shell /bin/zsh
 
 startup_message off
 
@@ -12,4 +12,6 @@ maptimeout 5
 
 term screen-256color
 
-bind C eval "clear" "scrollback 0" "scrollback 32000"
+msgwait 0
+
+hardstatus alwayslastline "%{= kw}%w"
