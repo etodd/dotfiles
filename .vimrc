@@ -1,7 +1,6 @@
 set wildignore+=*/.yarn-cache/*,*/.vscode/*,*/bin/*,*/obj/*,*/node_modules/*,*/.git/*
 
 set completeopt-=preview
-set laststatus=2
 set secure
 set exrc
 set encoding=utf-8
