@@ -1,14 +1,3 @@
-set t_Co=256
-
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-set runtimepath^=~/.vim/bundle/lightline.vim
-set runtimepath^=~/.vim/bundle/vim-gitgutter
-set runtimepath^=~/.vim/bundle/vim-sleuth
-let g:ctrlp_working_path_mode = 'a'
-let g:lightline = {
-	\ 'colorscheme': 'wombat',
-	\ }
-
 set wildignore+=*/.yarn-cache/*,*/.vscode/*,*/bin/*,*/obj/*,*/node_modules/*,*/.git/*
 
 set completeopt-=preview
@@ -57,8 +46,6 @@ set pastetoggle=<F2>
 set backspace=indent,eol,start
 set whichwrap=h,l,~,[,]
  
-nnoremap j gj
-nnoremap k gk
 cmap w!! w !sudo tee % >/dev/null
 
 " return to old position when reopening files
@@ -66,18 +53,4 @@ if has("autocmd")
 	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 endif
  
-color ron
 syntax on
-hi ErrorMsg ctermfg=Red ctermbg=Black
-hi Error ctermfg=Red ctermbg=Black
-hi SpellBad ctermfg=Red ctermbg=Black
-hi SpellCap ctermfg=0 ctermbg=11
-hi Cursor ctermbg=white
-hi CursorLine ctermbg=black cterm=none
-hi CursorColumn ctermbg=black
-hi MatchParen ctermbg=black ctermfg=red
-hi DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white 
-hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=white 
-hi DiffText term=reverse cterm=bold ctermfg=15 ctermbg=4
-hi DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=white 
-hi Todo term=standout ctermfg=11 ctermbg=0
