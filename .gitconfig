@@ -1,11 +1,21 @@
 [user]
-	name = Evan Todd
 	email = evan@etodd.io
+	name = Evan Todd
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
+	required = true
+	clean = git-lfs clean -- %f
+[credential]
+	helper = store
+[push]
+	autoSetupRemote = true
+	default = simple
 [color]
 	ui = true
 [merge]
 	tool = vimdiff
 [diff]
 	tool = vimdiff
-[push]
-	default = simple
