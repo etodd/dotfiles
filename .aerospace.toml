@@ -78,10 +78,6 @@ alt-enter = 'exec-and-forget /Applications/Alacritty.app/Contents/MacOS/alacritt
 # See: https://nikitabobko.github.io/AeroSpace/commands.html#exec-and-forget
 # alt-enter = 'exec-and-forget open -n /System/Applications/Utilities/Terminal.app'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands.html#layout
-alt-slash = 'layout tiles horizontal vertical'
-alt-comma = 'layout accordion horizontal vertical'
-
 # See: https://nikitabobko.github.io/AeroSpace/commands.html#focus
 alt-h = 'focus left'
 alt-j = 'focus down'
@@ -122,6 +118,6 @@ alt-shift-7 = 'move-node-to-workspace 7'
 alt-shift-8 = 'move-node-to-workspace 8'
 alt-shift-9 = 'move-node-to-workspace 9'
 
-alt-shift-space = 'fullscreen'
+alt-f = 'fullscreen'
 
 alt-w = 'close'
