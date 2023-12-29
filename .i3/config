@@ -18,7 +18,7 @@ floating_modifier $mod
 bindsym $mod+Return exec xterm -e screen
 
 # kill focused window
-bindsym $mod+q kill
+bindsym $mod+w kill
 
 # start dmenu (a program launcher)
 bindsym $mod+space exec dmenu_run

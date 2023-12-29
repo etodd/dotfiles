@@ -1,3 +1,0 @@
-xset r rate 180 30
-xsetroot -solid "#101a26"
-xrdb -merge ~/.Xresources
