@@ -4,3 +4,8 @@ multiplier = 3
 
 [font]
 size = 16
+
+[window.dimensions]
+columns = 120
+lines = 60
+
