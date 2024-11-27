@@ -7,3 +7,6 @@ PROMPT="%F{blue}%n@%m %1~ %#%f "
 
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
+
+export VISUAL=vim
+export EDITOR=vim
