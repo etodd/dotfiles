@@ -19,5 +19,19 @@
 	tool = vimdiff
 [diff]
 	tool = vimdiff
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[fetch]
+	prune = true
+	pruneTags = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[rerere]
+	enabled = true
+	autoupdate = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
