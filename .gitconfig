@@ -23,9 +23,6 @@
 	colorMoved = plain
 	mnemonicPrefix = true
 	renames = true
-[fetch]
-	prune = true
-	pruneTags = true
 [column]
 	ui = auto
 [branch]
