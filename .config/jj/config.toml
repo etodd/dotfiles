@@ -1,0 +1,13 @@
+#:schema https://jj-vcs.github.io/jj/latest/config-schema.json
+
+[user]
+email = "evan@etodd.io"
+name = "Evan Todd"
+
+[ui]
+diff-editor = ["nvim", "-d", "$left", "$right"]
+merge-editor = ["nvim", "-d", "-c", "wincmd l", "-c", "norm ]c", "$left", "$output", "$right"]
+default-command = "log"
+
+[revset-aliases]
+'immutable_heads()' = 'present(trunk()) | untracked_remote_bookmarks()'
