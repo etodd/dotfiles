@@ -82,7 +82,7 @@ keybind = super+shift+bracket_right=unbind
 keybind = super+arrow_down=unbind
 keybind = ctrl+shift+tab=unbind
 keybind = alt+arrow_right=esc:f
-keybind = super+n=unbind
+keybind = super+n=new_window
 keybind = shift+home=unbind
 keybind = super+alt+i=unbind
 keybind = super+digit_5=unbind
