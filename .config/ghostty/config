@@ -1,0 +1,4 @@
+font-family = Menlo
+font-size = 16
+maximize = true
+command = /opt/homebrew/bin/tmux
