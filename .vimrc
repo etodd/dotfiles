@@ -1,4 +1,4 @@
-set wildignore+=*/.yarn-cache/*,*/.vscode/*,*/bin/*,*/obj/*,*/node_modules/*,*/.git/*
+set wildignore+=*/.yarn-cache/*,*/.vscode/*,*/bin/*,*/obj/*,*/node_modules/*,*/.git/*,*/.jj/*
 
 set completeopt-=preview
 set secure
