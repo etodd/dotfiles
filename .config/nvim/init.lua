@@ -86,3 +86,9 @@ vim.api.nvim_create_autocmd("BufReadPost", {
   end,
 })
 
+-- Redefine :E to always open netrw's Explore
+pcall(vim.api.nvim_del_user_command, "E")
+vim.api.nvim_create_user_command("E", function()
+  vim.cmd("Explore")
+end, { desc = "Open netrw file explorer" })
+
