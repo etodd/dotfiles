@@ -1,6 +1,0 @@
-[submodule ".vim/pack/plugins/start/ctrlp"]
-	path = .vim/pack/plugins/start/ctrlp
-	url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule ".vim/pack/plugins/start/vim-visual-multi"]
-	path = .vim/pack/plugins/start/vim-visual-multi
-	url = git@github.com:mg979/vim-visual-multi
