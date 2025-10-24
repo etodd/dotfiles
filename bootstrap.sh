@@ -4,8 +4,6 @@ set -e
 
 cd "$(dirname "${BASH_SOURCE}")"
 
-git submodule update --init --recursive
-
 function doIt() {
 	rsync --exclude ".git/" --exclude "/*.sh" \
 		--exclude "README.md" --exclude ".gitmodules" -avh --no-perms . ~
