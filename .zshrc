@@ -10,3 +10,5 @@ bindkey "^[[1;3D" backward-word
 
 export VISUAL=nvim
 export EDITOR=nvim
+
+source ~/.zprofile

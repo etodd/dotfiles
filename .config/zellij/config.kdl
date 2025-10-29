@@ -1,0 +1,78 @@
+keybinds clear-defaults=true {
+	normal {
+		bind "Alt t" { NewTab; }
+	}
+    search {
+        bind "c" { SearchToggleOption "CaseSensitivity"; }
+        bind "n" { Search "down"; }
+        bind "o" { SearchToggleOption "WholeWord"; }
+        bind "p" { Search "up"; }
+        bind "w" { SearchToggleOption "Wrap"; }
+    }
+    shared_except "locked" {
+    	bind "Alt s" { EditScrollback; }
+        bind "Alt +" { Resize "Increase"; }
+        bind "Alt -" { Resize "Decrease"; }
+        bind "Alt =" { Resize "Increase"; }
+        bind "Alt f" { ToggleFocusFullscreen; }
+        bind "Alt h" { MoveFocusOrTab "left"; }
+        bind "Alt i" { GoToPreviousTab; }
+        bind "Alt j" { MoveFocus "down"; }
+        bind "Alt k" { MoveFocus "up"; }
+        bind "Alt l" { MoveFocusOrTab "right"; }
+        bind "Alt n" { NewPane; }
+        bind "Alt o" { GoToNextTab; }
+        bind "Alt w" { CloseFocus; }
+        bind "Alt q" { Quit; }
+        bind "Alt 1" { GoToTab 1; }
+        bind "Alt 2" { GoToTab 2; }
+        bind "Alt 3" { GoToTab 3; }
+        bind "Alt 4" { GoToTab 4; }
+        bind "Alt 5" { GoToTab 5; }
+        bind "Alt 6" { GoToTab 6; }
+        bind "Alt 7" { GoToTab 7; }
+        bind "Alt 8" { GoToTab 8; }
+        bind "Alt 9" { GoToTab 9; }
+    }
+    shared_except "locked" "move" {
+        bind "Alt m" { SwitchToMode "move"; }
+    }
+    shared_except "locked" "resize" {
+        bind "Alt r" { SwitchToMode "resize"; }
+    }
+    shared_except "normal" "locked" {
+        bind "enter" { SwitchToMode "normal"; }
+    }
+    shared_except "normal" "locked" {
+        bind "esc" { SwitchToMode "normal"; }
+    }
+}
+
+// Plugin aliases - can be used to change the implementation of Zellij
+// changing these requires a restart to take effect
+plugins {
+    compact-bar location="zellij:compact-bar"
+    configuration location="zellij:configuration"
+    tab-bar location="zellij:tab-bar"
+}
+
+// Plugins to load in the background when a new session starts
+// eg. "file:/path/to/my-plugin.wasm"
+// eg. "https://example.com/my-plugin.wasm"
+load_plugins {
+}
+web_client {
+    font "monospace"
+}
+ 
+default_layout "compact"
+ 
+on_force_close "quit"
+ 
+scroll_buffer_size 100000
+ 
+show_startup_tips false
+ 
+show_release_notes false
+
+pane_frames false
