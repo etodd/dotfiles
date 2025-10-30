@@ -1,7 +1,7 @@
 font-family = Menlo
 font-size = 16
 maximize = true
-command = /opt/homebrew/bin/zellij
+command = /opt/homebrew/bin/tmux
 theme = GitHub Dark High Contrast
 
 keybind = super+shift+d=unbind

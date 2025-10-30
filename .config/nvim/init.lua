@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   { "ctrlpvim/ctrlp.vim" },
   { "mg979/vim-visual-multi", branch = "master" },
+  { "neovim/nvim-lspconfig" },
 })
 
 local opt = vim.opt
@@ -61,6 +62,7 @@ opt.secure = true
 opt.exrc = true
 opt.magic = true
 opt.diffopt:append({ "filler", "iwhite" })
+opt.laststatus = 0
 
 opt.wildignore:append({
   "*/.yarn-cache/*",
@@ -92,3 +94,6 @@ vim.api.nvim_create_user_command("E", function()
   vim.cmd("Explore")
 end, { desc = "Open netrw file explorer" })
 
+
+vim.lsp.enable('gopls')
+vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
