@@ -3,17 +3,15 @@ theme = "github_dark_high_contrast"
 [editor]
 cursorline = true
 cursorcolumn = true
+bufferline = "always"
 
 [keys.normal]
-# Quick iteration on config changes
-C-o = ":config-open"
-C-r = ":config-reload"
-
-# Some nice Helix stuff
 C-h = "select_prev_sibling"
 C-j = "shrink_selection"
 C-k = "expand_selection"
 C-l = "select_next_sibling"
+C-w = ":buffer-close"
+C-s = ":write"
 
 # Personal preference
 o = ["open_below", "normal_mode"]
@@ -61,6 +59,7 @@ a = ["append_mode", "collapse_selection"]
 
 # Undoing the 'd' + motion commands restores the selection which is annoying
 u = ["undo", "collapse_selection"]
+C-r = "redo"
 
 # Escape the madness! No more fighting with the cursor! Or with multiple cursors!
 esc = ["collapse_selection", "keep_primary_selection"]
