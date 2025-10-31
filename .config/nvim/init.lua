@@ -14,7 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   { "ctrlpvim/ctrlp.vim" },
   { "mg979/vim-visual-multi", branch = "master" },
-  { "neovim/nvim-lspconfig" },
 })
 
 local opt = vim.opt
@@ -93,7 +92,3 @@ pcall(vim.api.nvim_del_user_command, "E")
 vim.api.nvim_create_user_command("E", function()
   vim.cmd("Explore")
 end, { desc = "Open netrw file explorer" })
-
-
-vim.lsp.enable('gopls')
-vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
