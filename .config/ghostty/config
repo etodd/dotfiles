@@ -57,7 +57,6 @@ keybind = paste=paste_from_clipboard
 keybind = super+bracket_right=unbind
 keybind = super+alt+arrow_up=unbind
 keybind = super+ctrl+arrow_right=unbind
-keybind = alt+arrow_left=esc:b
 keybind = super+equal=increase_font_size:1
 keybind = ctrl+tab=unbind
 keybind = super+digit_4=unbind
@@ -105,7 +104,6 @@ keybind = super+shift+j=unbind
 keybind = super+shift+bracket_right=unbind
 keybind = super+arrow_down=unbind
 keybind = ctrl+shift+tab=unbind
-keybind = alt+arrow_right=esc:f
 keybind = super+n=new_window
 keybind = shift+home=unbind
 keybind = super+alt+i=unbind
@@ -113,4 +111,5 @@ keybind = super+digit_5=unbind
 keybind = super+digit_3=unbind
 keybind = super+ctrl+arrow_up=unbind
 keybind = super+d=unbind
-
+keybind = alt+arrow_left=unbind
+keybind = alt+arrow_right=unbind
