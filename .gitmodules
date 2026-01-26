@@ -1,0 +1,6 @@
+[submodule ".local/share/nvim/site/pack/plugins/start/ctrlp.vim"]
+	path = .local/share/nvim/site/pack/plugins/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule ".local/share/nvim/site/pack/plugins/start/vim-visual-multi"]
+	path = .local/share/nvim/site/pack/plugins/start/vim-visual-multi
+	url = https://github.com/mg979/vim-visual-multi

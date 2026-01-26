@@ -1,8 +1,3 @@
-vim.pack.add({
-  { src = "https://github.com/ctrlpvim/ctrlp.vim" },
-  { src = "https://github.com/mg979/vim-visual-multi", branch = "master" },
-})
-
 local opt = vim.opt
 
 opt.encoding = "utf-8"
