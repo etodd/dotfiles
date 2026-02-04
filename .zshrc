@@ -12,3 +12,4 @@ export VISUAL=nvim
 export EDITOR=nvim
 
 source ~/.zprofile
+set -o emacs
