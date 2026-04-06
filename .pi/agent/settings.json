@@ -1,0 +1,8 @@
+{
+  "lastChangelogVersion": "0.65.2",
+  "packages": [
+    "npm:pi-terminal-theme",
+    "npm:pi-subagents"
+  ],
+  "theme": "terminal"
+}
