@@ -9,6 +9,9 @@ function precmd () {
 	print -Pn - '\e]0;%1~\a'
 }
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
